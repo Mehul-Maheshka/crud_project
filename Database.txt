@@ -1,0 +1,28 @@
+CREATE DATABASE employee_management;
+use employee_management;
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    skills VARCHAR(50),
+    experience VARCHAR(50),
+    age INT,
+    gender VARCHAR(10)
+);
+
+CREATE TABLE skills_options (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO skills_options (name) VALUES 
+('Programming'), 
+('Design'), 
+('Management');
+
+
+select * from employees ;
+select * from skills_options ;
+
+
+
